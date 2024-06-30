@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMA2 Assignment</title>
+    <link rel="stylesheet" href="shared/styles.css">
+</head>
+<body>
+    <div class="cover-page">
+        <h1>Tutor Marked Assignment 2</h1>
+        <p>Course Name: Advanced Technologies for Web-Based Systems</p>
+        <p>Course Number: Computer Science 466</p>
+        <p>Name: Sage Cole</p>
+        <p>Student ID: 3481585</p>
+        <p>Date Started: June 5, 2024</p>
+        <p>Date Completed: June 21, 2024</p>
+        <p>Estimated Hours Spent: 100 hours</p>
+    </div>
+
+    <div class="content">
+        <div class="project">
+            <h2>Part 1: Online Bookmarking Service</h2>
+            <h3>Description</h3>
+            <p>This project involved using MySQL and PHP to develop a web application that provides an online bookmarking service to users on the internet. 
+                The web application has a thoughtful interface with navigation buttons and a consistent name shown across all the pages. It begins with a welcome message 
+                and a list of the ten most popular websites that users of the web application have bookmarked. Once signed in, a list of bookmarks the user has 
+                made are displayed, and the user can browse any website in the list in a new browser tab by clicking a link to the site. The user can add new 
+                websites to the list and edit and delete any of the existing ones in the list. When adding or editing, user input is validated using JavaScript 
+                to make sure the URLs are not only correct but also active.</p>
+            
+            <h3>Analysis and Design</h3>
+            <p>The analysis and design of the Online Bookmarking Service focused on creating a user-friendly, responsive, and secure web application. 
+               The key considerations in the design process included:
+               <ul>
+                   <li><strong>User Interface:</strong> The interface was designed to be intuitive and easy to navigate, with clear navigation buttons and a consistent layout across all pages. The use of a simple, clean design helps users focus on their tasks without unnecessary distractions.</li>
+                   <li><strong>Responsiveness:</strong> The application was designed to be fully responsive, ensuring that it works seamlessly on a variety of devices, including desktops, tablets, and smartphones. This was achieved using flexible grid layouts and media queries in CSS.</li>
+                   <li><strong>Database Design:</strong> A relational database was designed using MySQL to store user information and bookmarks. The database schema included tables for users, bookmarks, and popular sites, with appropriate relationships and indexing for efficient data retrieval.</li>
+                   <li><strong>Security:</strong> Security measures were incorporated into the design to protect user data. This included input validation using JavaScript to prevent the entry of invalid URLs, and the use of prepared statements in PHP to prevent SQL injection attacks.</li>
+                   <li><strong>Functionality:</strong> The core functionality of the application included user registration and login, the ability to add, edit, and delete bookmarks, and displaying the ten most popular bookmarks. JavaScript was used to enhance the user experience by providing real-time feedback during form submissions and ensuring that all URLs are active before they are added to the database.</li>
+               </ul>
+            </p>
+            
+            <h3>Implementation</h3>
+            <p>The implementation involved several key steps:
+               <ul>
+                   <li><strong>Setting Up the Environment:</strong> A local development environment was set up using XAMPP, which includes Apache, MySQL, and PHP. This allowed for efficient testing and development of the web application.</li>
+                   <li><strong>Database Setup:</strong> A MySQL database was created with tables for users, bookmarks, and popular sites. The database schema was designed to support the necessary relationships and ensure efficient data retrieval.</li>
+                   <li><strong>Frontend Development:</strong> HTML and CSS were used to create the structure and style of the web application. A responsive design was implemented using flexible grid layouts and media queries to ensure the application works on a variety of devices.</li>
+                   <li><strong>Backend Development:</strong> PHP was used to handle server-side operations, including user authentication, database interactions, and dynamic content generation. Prepared statements were used to prevent SQL injection attacks and ensure the security of user data.</li>
+                   <li><strong>JavaScript Integration:</strong> JavaScript was used to enhance the user experience by providing real-time feedback during form submissions, validating URLs, and ensuring all URLs are active before they are added to the database.</li>
+                   <li><strong>Testing and Debugging:</strong> Comprehensive testing was performed to identify and fix any bugs or issues. This included testing the functionality of the web application on different devices and browsers to ensure compatibility and responsiveness.</li>
+               </ul>
+            </p>
+            
+            <h3>User Guide</h3>
+            <p>To set up the website:
+               <ol>
+                   <li>Install XAMPP and start the Apache and MySQL servers.</li>
+                   <li>Import the provided database schema into MySQL.</li>
+                   <li>Place the web application files into the `htdocs` directory of the XAMPP installation.</li>
+                   <li>Open a web browser and navigate to `http://localhost/TMA2/part1/index.php` to access the application.</li>
+                   <li>Register a new user account and start using the bookmarking service.</li>
+               </ol>
+            </p>
+            
+            <h3>Web Application</h3>
+            <p><a href="part1/index.php" class="button">Online Bookmarking Service</a></p>
+
+            <h3>Database Setup</h3>
+            <p>To import the database schema, follow these steps:</p>
+            <ol>
+                <li>Open phpMyAdmin and select the `Import` tab.</li>
+                <li>Click the `Choose File` button and select the `db_schema.sql` file from the `part1` directory.</li>
+                <li>Click the `Go` button to import the database schema.</li>
+                <li>Ensure the database name is `bookmarking_service` as referenced in the `config/database.php` file.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="project">
+            <h2>Part 2: Online Learning Management System</h2>
+            <h3>Description</h3>
+            <p>This project involves developing a small-scale online learning management system (LMS) designed to deliver online courses to learners. The system will 
+                involve creating a custom educational markup language (EML), designing a database to manage course contents, developing a user management module for 
+                learners, and implementing a parser to translate EML to HTML for presentation in web browsers. The goal is to provide an intuitive, user-friendly platform 
+                for managing and delivering educational content.
+            </p>
+            
+            <h3>Analysis and Design</h3>
+            <p>The analysis and design of the Online Learning Management System focused on creating a comprehensive, efficient, and user-friendly system. The key considerations 
+                in the design process included:
+               <ul>
+                   <li><strong>User Interface:</strong> The interface was designed to be intuitive and easy to navigate, ensuring that learners can easily access and interact with course materials. A consistent layout and design elements were used across all pages to provide a cohesive experience.</li>
+                   <li><strong>Educational Markup Language (EML):</strong> A custom EML was developed to allow subject matter experts (SMEs) to create course content without needing to know HTML. The EML includes tags for defining courses, units, lessons, quizzes, and various educational elements, making it easy for SMEs to mark up educational materials.</li>
+                   <li><strong>Database Design:</strong> A relational database was designed using MySQL to store information about courses, units, lessons, quizzes, learners, and other learning objects. The database schema includes tables for courses, units, lessons, quizzes, and user information, with appropriate relationships and indexing for efficient data retrieval.</li>
+                   <li><strong>Functionality:</strong> The core functionality of the LMS includes user registration and login, the ability to add, edit, and delete course content, and the ability to take quizzes. The system also includes a parser to convert EML content into HTML for rendering in web browsers.</li>
+                   <li><strong>Security:</strong> Security measures were incorporated into the design to protect user data. This includes input validation using JavaScript to ensure the integrity of the data entered by users and the use of prepared statements in PHP to prevent SQL injection attacks.</li>
+               </ul>
+            </p>
+
+            <h3>Educational Markup Language (EML)</h3>
+            <p>The EML was developed to allow subject matter experts (SMEs) to create course content without needing to know HTML. Below is a detailed explanation of the EML tags and their intended purposes, along with examples.
+            </p>
+            <h4>Tags and Explanation</h4>
+            <ul>
+                <li><code>&lt;course&gt;</code>: The root element that contains all information about a course.
+                    <ul>
+                        <li><code>&lt;title&gt;</code>: The title of the course.</li>
+                        <li><code>&lt;description&gt;</code>: A brief description of the course.</li>
+                        <li><code>&lt;units&gt;</code>: Container for all the units within the course.
+                            <ul>
+                                <li><code>&lt;unit&gt;</code>: Represents a single unit within the course.
+                                    <ul>
+                                        <li><code>&lt;title&gt;</code>: The title of the unit.</li>
+                                        <li><code>&lt;lessons&gt;</code>: Container for all the lessons within the unit.
+                                            <ul>
+                                                <li><code>&lt;lesson&gt;</code>: Represents a single lesson within the unit.
+                                                    <ul>
+                                                        <li><code>&lt;title&gt;</code>: The title of the lesson.</li>
+                                                        <li><code>&lt;content&gt;</code>: The content of the lesson.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><code>&lt;quizzes&gt;</code>: Container for all the quizzes within the unit.
+                                            <ul>
+                                                <li><code>&lt;quiz&gt;</code>: Represents a single quiz within the unit.
+                                                    <ul>
+                                                        <li><code>&lt;title&gt;</code>: The title of the quiz.</li>
+                                                        <li><code>&lt;questions&gt;</code>: Container for all the questions within the quiz.
+                                                            <ul>
+                                                                <li><code>&lt;question&gt;</code>: Represents a single question within the quiz.
+                                                                    <ul>
+                                                                        <li><code>&lt;text&gt;</code>: The text of the question.</li>
+                                                                        <li><code>&lt;options&gt;</code>: Container for all the options for the question.
+                                                                            <ul>
+                                                                                <li><code>&lt;option correct="true"&gt;</code>: An option for the question. The attribute <code>correct</code> indicates if the option is correct.</li>
+                                                                                <li><code>&lt;option correct="false"&gt;</code>: An option for the question.</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Example EML</h4>
+            <pre><code>&lt;course&gt;
+    &lt;title&gt;Introduction to HTML&lt;/title&gt;
+    &lt;description&gt;This course covers the basics of HTML.&lt;/description&gt;
+    &lt;units&gt;
+        &lt;unit&gt;
+            &lt;title&gt;Unit 1: HTML Basics&lt;/title&gt;
+            &lt;lessons&gt;
+                &lt;lesson&gt;
+                    &lt;title&gt;Lesson 1: Introduction&lt;/title&gt;
+                    &lt;content&gt;HTML stands for Hyper Text Markup Language.&lt;/content&gt;
+                &lt;/lesson&gt;
+            &lt;/lessons&gt;
+            &lt;quizzes&gt;
+                &lt;quiz&gt;
+                    &lt;title&gt;Quiz 1: HTML Basics&lt;/title&gt;
+                    &lt;questions&gt;
+                        &lt;question&gt;
+                            &lt;text&gt;What does HTML stand for?&lt;/text&gt;
+                            &lt;options&gt;
+                                &lt;option correct="true"&gt;Hyper Text Markup Language&lt;/option&gt;
+                                &lt;option correct="false"&gt;Hyperlinks and Text Markup Language&lt;/option&gt;
+                            &lt;/options&gt;
+                        &lt;/question&gt;
+                    &lt;/questions&gt;
+                &lt;/quiz&gt;
+            &lt;/quizzes&gt;
+        &lt;/unit&gt;
+    &lt;/units&gt;
+&lt;/course&gt;
+</code></pre>
+
+            <h3>Data Flow</h3>
+            <p>The data flow in the LMS involves the following steps:
+               <ul>
+                   <li>**User Registration and Login:** Users register by submitting their details through the registration form. Data is validated and stored in the database. Users log in using their credentials, and session data is created.</li>
+                   <li>**Course Creation:** SMEs input course details using EML. EML is parsed, and course data is stored in the database. Units, lessons, and quizzes are stored in their respective tables.</li>
+                   <li>**Viewing Courses:** Users request to view available courses. The system fetches course data from the database and displays it.</li>
+                   <li>**Deleting Courses:** Users request to delete a course. The system deletes the course and all associated data from the database.</li>
+               </ul>
+            </p>
+            
+            <h3>System Layout</h3>
+            <p>The system layout within the browser's window includes:
+               <ul>
+                   <li>**Home Page:** Displays a welcome message and navigation links/buttons to profile, courses, and logout.</li>
+                   <li>**Profile Page:** Displays user profile information and a link to edit the profile.</li>
+                   <li>**Courses Page:** Lists all available courses with links to view and delete each course. Includes a button to create a new course.</li>
+                   <li>**Create Course Page:** Provides a form for SMEs to input EML for course creation. Includes a Home button for navigation.</li>
+                   <li>**Course Details Page:** Displays details of a selected course, including units, lessons, and quizzes.</li>
+                   <li>**Quiz Page:** Displays quiz questions and options for users to submit their responses.</li>
+               </ul>
+            </p>
+            
+            <h3>Implementation</h3>
+            <p>The implementation of the LMS involved several key steps:
+               <ul>
+                   <li><strong>Setting Up the Environment:</strong> A local development environment was set up using XAMPP, which includes Apache, MySQL, and PHP. This allowed for efficient testing and development of the web application.</li>
+                   <li><strong>Database Setup:</strong> A MySQL database was created with tables for courses, units, lessons, quizzes, and users. The database schema was designed to support the necessary relationships and ensure efficient data retrieval.</li>
+                   <li><strong>Frontend Development:</strong> HTML and CSS were used to create the structure and style of the web application. A responsive design was implemented using flexible grid layouts and media queries to ensure the application works on a variety of devices.</li>
+                   <li><strong>Backend Development:</strong> PHP was used to handle server-side operations, including user authentication, database interactions, and dynamic content generation. Prepared statements were used to prevent SQL injection attacks and ensure the security of user data.</li>
+                   <li><strong>JavaScript Integration:</strong> JavaScript was used to enhance the user experience by providing real-time feedback during form submissions, validating URLs, and ensuring all URLs are active before they are added to the database.</li>
+                   <li><strong>Parser Development:</strong> A PHP parser was developed to convert EML content stored in the database into HTML for rendering in web browsers.</li>
+               </ul>
+            </p>
+            
+            <h3>User Guide</h3>
+            <p>To set up the LMS:
+               <ol>
+                   <li>Install XAMPP and start the Apache and MySQL servers.</li>
+                   <li>Import the provided database schema into MySQL.</li>
+                   <li>Place the web application files into the `htdocs` directory of the XAMPP installation.</li>
+                   <li>Open a web browser and navigate to `http://localhost/TMA2/part2/index.php` to access the application.</li>
+                   <li>Register a new user account and start using the LMS.</li>
+               </ol>
+            </p>
+            
+            <h3>Web Application</h3>
+            <p><a href="part2/index.php" class="button">Online Learning Management System</a></p>
+
+            <h3>Database Setup</h3>
+            <p>To import the database schema, follow these steps:</p>
+            <ol>
+                <li>Open phpMyAdmin and select the `Import` tab.</li>
+                <li>Click the `Choose File` button and select the `lms.sql` file from the `part2` directory.</li>
+                <li>Click the `Go` button to import the database schema.</li>
+                <li>Ensure the database name is `lms` as referenced in the `config/database.php` file.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="shared/scripts.js"></script>
+</body>
+</html>

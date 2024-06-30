@@ -1,0 +1,322 @@
+<course>
+    <title>Comprehensive HTML Course</title>
+    <description>This course covers all aspects of HTML, from basic tags to advanced features.</description>
+    <units>
+        <!-- Unit 1: HTML Basics -->
+        <unit>
+            <title>Unit 1: HTML Basics</title>
+            <lessons>
+                <!-- Lesson 1: Introduction to HTML -->
+                <lesson>
+                    <title>Lesson 1: Introduction to HTML</title>
+                    <content>
+                        <text>HTML stands for HyperText Markup Language. It is the standard language for creating web pages.</text>
+                        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 2: HTML Elements -->
+                <lesson>
+                    <title>Lesson 2: HTML Elements</title>
+                    <content>
+                        <text>An HTML element is defined by a start tag, some content, and an end tag.</text>
+                        <pre>
+&lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+                        </pre>
+                        <text>For example:</text>
+                        <pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 3: HTML Attributes -->
+                <lesson>
+                    <title>Lesson 3: HTML Attributes</title>
+                    <content>
+                        <text>HTML attributes provide additional information about HTML elements. Attributes are always included in the opening tag and usually come in name/value pairs like: name="value".</text>
+                        <pre>
+&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+                        </pre>
+                    </content>
+                </lesson>
+            </lessons>
+            <quizzes>
+                <!-- Quiz 1: HTML Basics -->
+                <quiz>
+                    <title>Quiz 1: HTML Basics</title>
+                    <questions>
+                        <question>
+                            <text>What does HTML stand for?</text>
+                            <options>
+                                <option correct="true">Hyper Text Markup Language</option>
+                                <option correct="false">Hyperlinks and Text Markup Language</option>
+                            </options>
+                        </question>
+                        <question>
+                            <text>Which HTML tag is used to define a paragraph?</text>
+                            <options>
+                                <option correct="true">&lt;p&gt;</option>
+                                <option correct="false">&lt;par&gt;</option>
+                                <option correct="false">&lt;pg&gt;</option>
+                            </options>
+                        </question>
+                    </questions>
+                </quiz>
+            </quizzes>
+        </unit>
+        <!-- Unit 2: HTML Formatting -->
+        <unit>
+            <title>Unit 2: HTML Formatting</title>
+            <lessons>
+                <!-- Lesson 1: Text Formatting -->
+                <lesson>
+                    <title>Lesson 1: Text Formatting</title>
+                    <content>
+                        <text>HTML uses elements like &lt;b&gt; and &lt;i&gt; for formatting output, like bold or italic text.</text>
+                        <pre>
+&lt;b&gt;This text is bold&lt;/b&gt;
+&lt;i&gt;This text is italic&lt;/i&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 2: HTML Quotations -->
+                <lesson>
+                    <title>Lesson 2: HTML Quotations</title>
+                    <content>
+                        <text>HTML offers elements for quoting text:</text>
+                        <pre>
+&lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;
+&lt;q&gt;This is an inline quotation.&lt;/q&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 3: HTML Comments -->
+                <lesson>
+                    <title>Lesson 3: HTML Comments</title>
+                    <content>
+                        <text>HTML comments are not displayed in the browser, but they can help document your HTML source code.</text>
+                        <pre>
+&lt;!-- This is a comment --&gt;
+                        </pre>
+                    </content>
+                </lesson>
+            </lessons>
+            <quizzes>
+                <!-- Quiz 2: HTML Formatting -->
+                <quiz>
+                    <title>Quiz 2: HTML Formatting</title>
+                    <questions>
+                        <question>
+                            <text>Which HTML tag is used to define bold text?</text>
+                            <options>
+                                <option correct="true">&lt;b&gt;</option>
+                                <option correct="false">&lt;bold&gt;</option>
+                                <option correct="false">&lt;strong&gt;</option>
+                            </options>
+                        </question>
+                        <question>
+                            <text>How do you write a comment in HTML?</text>
+                            <options>
+                                <option correct="true">&lt;!-- This is a comment --&gt;</option>
+                                <option correct="false">&lt;comment&gt;This is a comment&lt;/comment&gt;</option>
+                            </options>
+                        </question>
+                    </questions>
+                </quiz>
+            </quizzes>
+        </unit>
+        <!-- Unit 3: HTML Links and Images -->
+        <unit>
+            <title>Unit 3: HTML Links and Images</title>
+            <lessons>
+                <!-- Lesson 1: HTML Links -->
+                <lesson>
+                    <title>Lesson 1: HTML Links</title>
+                    <content>
+                        <text>HTML links are hyperlinks. You can click on a link and jump to another document.</text>
+                        <pre>
+&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 2: HTML Images -->
+                <lesson>
+                    <title>Lesson 2: HTML Images</title>
+                    <content>
+                        <text>HTML images are defined with the &lt;img&gt; tag. The source file (src), alternative text (alt), and size (width and height) are provided as attributes:</text>
+                        <pre>
+&lt;img src="img.jpg" alt="Description" width="500" height="600"&gt;
+                        </pre>
+                    </content>
+                </lesson>
+            </lessons>
+            <quizzes>
+                <!-- Quiz 3: HTML Links and Images -->
+                <quiz>
+                    <title>Quiz 3: HTML Links and Images</title>
+                    <questions>
+                        <question>
+                            <text>Which HTML tag is used to define a link?</text>
+                            <options>
+                                <option correct="true">&lt;a&gt;</option>
+                                <option correct="false">&lt;link&gt;</option>
+                                <option correct="false">&lt;href&gt;</option>
+                            </options>
+                        </question>
+                        <question>
+                            <text>How do you specify the alt attribute for an image?</text>
+                            <options>
+                                <option correct="true">&lt;img src="img.jpg" alt="Description"&gt;</option>
+                                <option correct="false">&lt;img alt="Description" src="img.jpg"&gt;</option>
+                                <option correct="false">&lt;img src="img.jpg" description="Description"&gt;</option>
+                            </options>
+                        </question>
+                    </questions>
+                </quiz>
+            </quizzes>
+        </unit>
+        <!-- Unit 4: HTML Lists and Tables -->
+        <unit>
+            <title>Unit 4: HTML Lists and Tables</title>
+            <lessons>
+                <!-- Lesson 1: HTML Lists -->
+                <lesson>
+                    <title>Lesson 1: HTML Lists</title>
+                    <content>
+                        <text>HTML supports ordered, unordered, and definition lists:</text>
+                        <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 2: HTML Tables -->
+                <lesson>
+                    <title>Lesson 2: HTML Tables</title>
+                    <content>
+                        <text>HTML tables are defined with the &lt;table&gt; tag. A table is divided into rows with the &lt;tr&gt; tag. A row is divided into data cells (th and td tags).</text>
+                        <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Heading 1&lt;/th&gt;
+        &lt;th&gt;Heading 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </pre>
+                    </content>
+                </lesson>
+            </lessons>
+            <quizzes>
+                <!-- Quiz 4: HTML Lists and Tables -->
+                <quiz>
+                    <title>Quiz 4: HTML Lists and Tables</title>
+                    <questions>
+                        <question>
+                            <text>Which HTML tag is used to define an unordered list?</text>
+                            <options>
+                                <option correct="true">&lt;ul&gt;</option>
+                                <option correct="false">&lt;ol&gt;</option>
+                                <option correct="false">&lt;list&gt;</option>
+                            </options>
+                        </question>
+                        <question>
+                            <text>How do you define a table row in HTML?</text>
+                            <options>
+                                <option correct="true">&lt;tr&gt;</option>
+                                <option correct="false">&lt;td&gt;</option>
+                                <option correct="false">&lt;table&gt;</option>
+                            </options>
+                        </question>
+                    </questions>
+                </quiz>
+            </quizzes>
+        </unit>
+        <!-- Unit 5: HTML Forms and Multimedia -->
+        <unit>
+            <title>Unit 5: HTML Forms and Multimedia</title>
+            <lessons>
+                <!-- Lesson 1: HTML Forms -->
+                <lesson>
+                    <title>Lesson 1: HTML Forms</title>
+                    <content>
+                        <text>HTML forms are used to collect user input. The &lt;form&gt; tag is used to create an HTML form for user input:</text>
+                        <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+                        </pre>
+                    </content>
+                </lesson>
+                <!-- Lesson 2: HTML Multimedia -->
+                <lesson>
+                    <title>Lesson 2: HTML Multimedia</title>
+                    <content>
+                        <text>HTML supports various multimedia elements like audio and video:</text>
+                        <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                        </pre>
+                    </content>
+                </lesson>
+            </lessons>
+            <quizzes>
+                <!-- Quiz 5: HTML Forms and Multimedia -->
+                <quiz>
+                    <title>Quiz 5: HTML Forms and Multimedia</title>
+                    <questions>
+                        <question>
+                            <text>Which HTML tag is used to create a form?</text>
+                            <options>
+                                <option correct="true">&lt;form&gt;</option>
+                                <option correct="false">&lt;input&gt;</option>
+                                <option correct="false">&lt;submit&gt;</option>
+                            </options>
+                        </question>
+                        <question>
+                            <text>How do you embed a video in HTML?</text>
+                            <options>
+                                <option correct="true">&lt;video&gt;&lt;/video&gt;</option>
+                                <option correct="false">&lt;media&gt;&lt;/media&gt;</option>
+                                <option correct="false">&lt;embed&gt;&lt;/embed&gt;</option>
+                            </options>
+                        </question>
+                    </questions>
+                </quiz>
+            </quizzes>
+        </unit>
+    </units>
+</course>

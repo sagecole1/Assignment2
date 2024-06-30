@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #2c2c2c; /* Darker grey background for the whole page */
+    color: #ffffff; /* White text for better readability */
+}
+
+.cover-page {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #3b3b3b; /* Slightly lighter grey for the content background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    background-color: #3b3b3b; /* Slightly lighter grey for the content background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 75%; /* Increased width of the main content */
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3b3b3b;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+}
+
+button {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+p {
+    color: #cccccc;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.button:hover {
+    background-color: #357ab8;
+}
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"] {
+    max-width: 100%; /* Ensure input fields don't extend beyond their container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.option-label {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 10px;
+    width: auto; /* Override the general rule */
+}
+
+.option-label input {
+    margin-right: 10px;
+    vertical-align: middle; /* Aligns the radio button with the text */
+    width: auto; /* Override the general rule */
+}
+
+.option-label input[type="radio"] {
+    display: inline-block; /* Override the general rule */
+    width: auto; /* Override the general rule */
+}
+
+.option-label span {
+    display: inline-block; /* Ensures text follows the radio button inline */
+}
